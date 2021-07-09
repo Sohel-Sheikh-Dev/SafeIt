@@ -1,0 +1,2 @@
+rootProject.name = "SafeIt"
+include ':app'

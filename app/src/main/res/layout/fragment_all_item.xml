@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AllItemFrag">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/all_Recycler_View"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/add_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Add Items"
+            android:textColor="@color/white"
+            app:icon="@drawable/ic_baseline_add_24"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_notes_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/ic_baseline_note_add_24"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toTopOf="@+id/add_fab"
+            app:layout_constraintEnd_toEndOf="@+id/add_fab"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/add_notes_action_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Add notes"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/add_notes_fab"
+            app:layout_constraintEnd_toStartOf="@+id/add_notes_fab"
+            app:layout_constraintTop_toTopOf="@+id/add_notes_fab" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_password_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/ic_baseline_lock_open_24"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toTopOf="@+id/add_notes_fab"
+            app:layout_constraintEnd_toEndOf="@+id/add_notes_fab"
+            app:layout_constraintStart_toStartOf="@+id/add_notes_fab"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/add_password_action_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Add Password"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/add_password_fab"
+            app:layout_constraintEnd_toStartOf="@+id/add_password_fab"
+            app:layout_constraintTop_toTopOf="@+id/add_password_fab" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
